@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/font/style-font.css">
     <title>Laguna Сеть отелей</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <div class="header-top">
                 <div class="header-top-left">
                     <a href="" class="logo">
                         <img src="/img/logo.svg" alt="" class="logo-image">
                     </a>
-                    <a href="tel:+74953225448" class="header-phone"></a>
+                    <a href="tel:+74953225448" class="header-phone">+7 495 322-54-48</a>
                 </div>
                 <div class="header-top-right">
-                    <a href="">Личный кабинет</a>
+                    <a href="" class="header-top-right-link">Личный кабинет</a>
                 </div>
             </div>
             <div class="header-bottom">
-                <div class="header-nav-left">
                     <nav class="header-nav">
                         <ul class="header-nav-list">
                             <li class="header-nav-item">
@@ -45,73 +45,85 @@
                                 <a href="" class="header-nav-link">Контакты</a>
                             </li>
                         </ul>
-
                     </nav>
-                </div>
-                <div class="header-btn-right">
-                    <a href="" class="header-btn">Хочу тур</a>
-                    <a href="" class="header-btn">Обратный звонок</a>
-            </div>
+                        <div class="btn">
+                            <a href="" class="header-btn">Хочу тур</a>
+                            <a href="" class="header-btn">Обратный звонок</a>
+                        </div>
         </div>
     </header>
     <main>
         <section class="section-offer">
-            <div class="container">
+            <div class="container container-section-offer">
                 <h1 class="section-heading">Спецпредложения</h1>
-                <ul class="section-offer-list">
-                    <li class="section-offer-list-small">
-                        <h2 class="section-offer-header">Мальдивские острова</h2>
-                        <h3 class="section-offer-price">от 55 000</h3>
-                        <a href="">подробнее</a>
-                    </li>
-                    <li class="section-offer-list-small">
-                        <h2 class="section-offer-header">Горящий тур на остров Крит</h2>
-                        <h3 class="section-offer-price">от 30 000</h3>
-                        <a href="">подробнее</a>
-                    </li>
-                    <li class="section-offer-list-big">
-                        <h2 class="section-offer-header">Номера категории люкс</h2>
-                        <h3 class="section-offer-price">от 5 000</h3>
-                        <a href="">подробнее</a>
-                    </li>
-                </ul>
+                <div class="section-offer-div">
+                    <ul class="section-offer-list">
+                        <li class="section-offer-small">
+                            <h2 class="section-offer-header">Мальдивские острова</h2>
+                            <h3 class="section-offer-price">от 55 000</h3>
+                            <a href="" class="section-offer__link">подробнее</a>
+                        </li>
+                        <li class="section-offer-small">
+                            <h2 class="section-offer-header">Горящий тур на остров Крит</h2>
+                            <h3 class="section-offer-price">от 30 000</h3>
+                            <a href="" class="section-offer__link">подробнее</a>
+                        </li>
+                    </ul>
+                        <div class="section-offer-big">
+                            <h2 class="section-offer-header-big">Номера категории люкс</h2>
+                            <h3 class="section-offer-price-big">от 5 000</h3>
+                            <a href="" class="section-offer__link">подробнее</a>
+                        </div>
+                </div>
             </div>
         </section>
         <section class="section-about">
-            <div class="container">
+            <div class="container container-section-about">
                 <h1 class="section-heading">О нас</h1>
-                <p class="section-about-text">Идейные соображения высшего порядка, а также сложившаяся структура организации влечёт за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых
+                <p class="section-about__text">Идейные соображения высшего порядка, а также сложившаяся структура организации влечёт за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых
                     и административных условий.</p>
             </div>
         </section>
         <section class="section-service">
-            <div class="container">
+            <div class="container service-container">
                 <h1 class="section-heading">Услуги</h1>
-                <ul class="secrion-service-list">
+                <ul class="section-service-list">
                     <li class="section-service-list-item">
-                        <a href="" class="section-service-link">Эксклюзивное обслуживание</a>
-                        <p class="section-service-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+                        <img src="/img/service1.png" alt="1" class="section-service__img">
+                        <div class="section-service__text">
+                            <a href="" class="section-service__link">Эксклюзивное обслуживание</a>
+                            <p class="section-service-text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+                        </div>
                     </li>
-                    <li class="section-service-list-item">
-                        <a href="" class="section-service-link">Аренда банкетных залов</a>
-                        <p class="section-service-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм</p>
+                    <li class="section-service-list-item service2">
+                        <img src="/img/service2.png" alt="2" class="section-service__img">
+                        <div class="section-service__text">
+                            <a href="" class="section-service__link">Аренда банкетных залов</a>
+                            <p class="section-service-text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм</p>
+                        </div>
                     </li>
-                    <li class="section-service-list-item">
-                        <a href="" class="section-service-link">Сауны, бассейны, бани, фитнес-залы</a>
-                        <p class="section-service-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+                    <li class="section-service-list-item service3">
+                        <img src="/img/service3.png" alt="3" class="section-service__img">
+                        <div class="section-service__text">
+                            <a href="" class="section-service__link">Сауны, бассейны, бани, фитнес-залы</a>
+                            <p class="section-service-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+                        </div>
                     </li>
-                    <li class="section-service-list-item">
-                        <a href="" class="section-service-link">Охраняемые автомобильные стоянки</a>
-                        <p class="section-service-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+                    <li class="section-service-list-item service4">
+                        <img src="/img/service4.png" alt="4" class="section-service__img">
+                        <div class="section-service__text">
+                            <a href="" class="section-service__link">Охраняемые автомобильные стоянки</a>
+                            <p class="section-service-text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="section-advantage">
-            <div class="container">
+            <div class="container advantage-container">
                 <h1 class="section-heading">Преимущества</h1>
-                <ul class="section-advantage-list">
-                    <li class="section-advantage-list-item">
+                <ul class="section-advantage__list">
+                    <li class="section-advantage__list-item">
                         <svg class="section-advanege-icon" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_370726_458)">
                             <path d="M37.95 58.4074H20.2875C11.375 58.4074 4.125 50.9308 4.125 41.7398V25.9359C4.125 24.9047 4.9375 24.0797 5.925 24.0797C6.9125 24.0797 7.725 24.9176 7.725 25.9359V41.7527C7.725 48.8941 13.35 54.6949 20.275 54.6949H37.9375C38.9375 54.6949 39.7375 55.5328 39.7375 56.5512C39.75 57.5824 38.95 58.4074 37.95 58.4074Z" fill="#2D527C"/>
@@ -140,7 +152,7 @@
                         <p class="section-advantage-text">Идейные соображения высшего порядка,
                             а также постоянный количественный рост</p>
                     </li>
-                    <li class="section-advantage-list-item">
+                    <li class="section-advantage__list-item">
                         <svg class="section-advanege-icon" width="67" height="66" viewBox="0 0 67 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_370726_440)">
                             <path d="M40.8281 49.0746H11.0707V35.0625C11.0707 30.0996 15.1535 26.0777 20.1916 26.0777H40.8281V49.0746Z" fill="#CEE8FA"/>
@@ -165,7 +177,7 @@
                             
                         <p class="section-advantage-text">Значимость этих проблем настолько очевидна, что вопрос остаётся открытым</p>
                     </li>
-                    <li class="section-advantage-list-item">
+                    <li class="section-advantage__list-item">
                         <svg class="section-advanege-icon" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M58.2375 61.2692H49.4375C48.5 61.2692 47.7375 60.4828 47.7375 59.516C47.7375 58.5492 48.5 57.7629 49.4375 57.7629H58.2375C59.55 57.7629 60.6125 56.6672 60.6125 55.3137V23.4867C60.6125 22.1332 59.55 21.0375 58.2375 21.0375H17.2375C15.925 21.0375 14.8625 22.1332 14.8625 23.4867V55.3395C14.8625 56.693 15.925 57.7887 17.2375 57.7887H40.1125C41.05 57.7887 41.8125 58.575 41.8125 59.5418C41.8125 60.5086 41.05 61.2949 40.1125 61.2949H17.2375C14.0625 61.2949 11.475 58.6266 11.475 55.3524V23.4867C11.475 20.2125 14.0625 17.5442 17.2375 17.5442H58.2375C61.4125 17.5442 64 20.2125 64 23.4867V55.3395C64 58.6008 61.4125 61.2692 58.2375 61.2692Z" fill="#2D527C"/>
                             <path d="M23.8375 53.1094C22.2125 53.1094 20.875 51.7301 20.875 50.0543V28.759C20.875 27.0832 22.2125 25.7039 23.8375 25.7039C25.4625 25.7039 26.8 27.0832 26.8 28.759V50.0543C26.7875 51.7301 25.4625 53.1094 23.8375 53.1094Z" fill="#CEE8FA"/>
@@ -184,7 +196,7 @@
                             
                         <p class="section-advantage-text">Таким образом реализация плановых заданий играет важную роль для понимания</p>
                     </li>
-                    <li class="section-advantage-list-item">
+                    <li class="section-advantage__list-item">
                         <svg class="section-advanege-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_370726_405)">
                             <path d="M38.4527 18.4851H19.207C18.1758 18.4851 17.3379 17.6472 17.3379 16.616C17.3379 15.5847 18.1758 14.7469 19.207 14.7469H38.4527C39.484 14.7469 40.3219 15.5847 40.3219 16.616C40.3219 17.6472 39.484 18.4851 38.4527 18.4851Z" fill="#2D527C"/>
@@ -208,7 +220,7 @@
                             
                         <p  class="section-advantage-text">Повседневная практика показывает, что сложившаяся структура организации</p>
                     </li>
-                    <li class="section-advantage-list-item">
+                    <li class="section-advantage__list-item">
                         <svg class="section-advanege-icon" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_370726_530)">
                             <path d="M15.6364 60.3152H11.1891C10.1966 60.3152 9.39734 59.516 9.39734 58.5234C9.39734 57.5308 10.1966 56.7316 11.1891 56.7316H15.6364C16.629 56.7316 17.4282 57.5308 17.4282 58.5234C17.4282 59.516 16.629 60.3152 15.6364 60.3152Z" fill="#F0BF5F"/>
@@ -233,7 +245,7 @@
                             
                         <p class="section-advantage-text">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
                     </li>
-                    <li class="section-advantage-list-item">
+                    <li class="section-advantage__list-item">
                         <svg class="section-advanege-icon" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M54.025 49.7191H9.97503C8.96253 49.7191 8.15002 48.8812 8.15002 47.8371V45.8519C8.15002 32.291 18.85 21.2566 32 21.2566C34.4875 21.2566 36.9375 21.6562 39.2875 22.4296C40.25 22.7519 40.775 23.8089 40.475 24.8015C40.1625 25.7941 39.1375 26.3355 38.175 26.0261C36.1875 25.3687 34.1125 25.0335 32 25.0335C20.8625 25.0335 11.8 34.3793 11.8 45.8648V45.9679H52.2V45.8648C52.2 40.2703 50.075 35.0109 46.225 31.0664C45.5125 30.3316 45.5 29.1457 46.2125 28.398C46.925 27.6632 48.075 27.6503 48.8 28.3851C53.35 33.0386 55.8625 39.239 55.8625 45.8519V47.8371C55.85 48.8812 55.0375 49.7191 54.025 49.7191Z" fill="#F0BF5F"/>
                             <path d="M32 24.5824C30.9875 24.5824 30.175 23.7445 30.175 22.7004V17.3637C30.175 16.3195 30.9875 15.4816 32 15.4816C33.0125 15.4816 33.8251 16.3195 33.8251 17.3637V22.7004C33.8251 23.7445 33.0125 24.5824 32 24.5824Z" fill="#F0BF5F"/>
@@ -251,7 +263,7 @@
                             
                         <p class="section-advantage-text">Консультация с активом влечёт за собой процесс внедрения услуг нашего сервиса</p>
                     </li>
-                    <li class="section-advantage-list-item">
+                    <li class="section-advantage__list-item">
                         <svg class="section-advanege-icon" width="67" height="66" viewBox="0 0 67 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M60.5094 61.5527H6.49062C2.91816 61.5527 0 58.691 0 55.159V10.841C0 7.30898 2.91816 4.44727 6.49062 4.44727H41.9404C42.9611 4.44727 43.7855 5.25937 43.7855 6.26484C43.7855 7.27031 42.9611 8.08242 41.9404 8.08242H6.49062C4.94648 8.08242 3.69023 9.31992 3.69023 10.841V55.159C3.69023 56.6801 4.94648 57.9176 6.49062 57.9176H60.5094C62.0535 57.9176 63.3098 56.6801 63.3098 55.159V10.841C63.3098 9.31992 62.0535 8.08242 60.5094 8.08242H52.5793C51.5586 8.08242 50.7342 7.27031 50.7342 6.26484C50.7342 5.25937 51.5586 4.44727 52.5793 4.44727H60.5094C64.0949 4.44727 67 7.32187 67 10.841V55.159C67 58.691 64.0818 61.5527 60.5094 61.5527Z" fill="#2D527C"/>
                             <path d="M53.8748 53.5348H18.1371C17.1164 53.5348 16.292 52.7227 16.292 51.7172C16.292 50.7117 17.1164 49.8996 18.1371 49.8996H53.8748C54.5815 49.8996 55.1572 49.3324 55.1572 48.6363V17.3766C55.1572 16.6805 54.5815 16.1133 53.8748 16.1133H18.1371C17.1164 16.1133 16.292 15.3012 16.292 14.2957C16.292 13.2902 17.1164 12.4781 18.1371 12.4781H53.8748C56.6229 12.4781 58.8605 14.6824 58.8605 17.3894V48.6363C58.8605 51.3305 56.6229 53.5348 53.8748 53.5348Z" fill="#2D527C"/>
@@ -269,7 +281,7 @@
                             
                         <p class="section-advantage-text">Повседневная практика показывает, что дальнейшее развитие различных </p>
                     </li>
-                    <li class="section-advantage-list-item">
+                    <li class="section-advantage__list-item">
                         <svg class="section-advanege-icon" width="64" height="66" viewBox="0 0 64 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_370726_480)">
                             <path d="M32.7875 29.5453C31.8 29.5453 30.9875 28.7203 30.9875 27.6891V6.63867C31 3.32578 33.775 0.644531 37.2 0.644531C40.625 0.644531 43.4 3.33867 43.4 6.65156C43.4 7.66992 42.6 8.50781 41.6 8.50781C40.6 8.50781 39.8 7.68281 39.8 6.65156C39.8 5.38828 38.625 4.35703 37.1875 4.35703C35.75 4.35703 34.575 5.38828 34.575 6.65156V27.702C34.5875 28.7074 33.7875 29.5453 32.7875 29.5453Z" fill="#F0BF5F"/>
@@ -294,187 +306,191 @@
             </div>
         </section>
         <section class="section-placement">
-            <div class="container">
+            <div class="container placement-container">
                 <h1 class="section-heading">Размещение</h1>
                 <ul class="section-placement-list">
                     <li class="section-placement-item">
-                        <span class="sectiop-placement-img"></span>
+                        <img src="/img/placement1.png" alt="Отель" class="section-placement-img placement-img81">
                         <div class="placement-info">
-                            <p class="placement-info-price">от<strong class="price">4 698</strong>/ ночь</p>
+                            <p class="placement-info-price">от <strong class="price">4 698</strong> / ночь</p>
                             <p class="placement-info-name">Lagoona Espaniola</p>
                             <p class="placement-info-place">Барселона, Испания</p>
                             <a href="" class="placement-btn">Номера</a>
+                            <div class="placement-rate">
                         </div>
-                        <div class="placement-rate">
                             alt=звёзды
                         </div>
                     </li>
                     <li class="section-placement-item">
-                        <span class="sectiop-placement-img"></span>
+                        <img src="/img/placement2.png" alt="Отель" class="section-placement-img placement-img82">
                         <div class="placement-info">
-                            <p class="placement-info-price">от<strong class="price">5 148</strong>/ ночь</p>
+                            <p class="placement-info-price">от <strong class="price">5 148</strong> / ночь</p>
                             <p class="placement-info-name">Lagoona son típicas</p>
                             <p class="placement-info-place">Барселона, Испания</p>
                             <a href="" class="placement-btn">Номера</a>
+                            <div class="placement-rate">
                         </div>
-                        <div class="placement-rate">
                             alt=звёзды
                         </div>
                     </li>
                     <li class="section-placement-item">
-                        <span class="sectiop-placement-img"></span>
+                        <img src="/img/placement3.png" alt="Отель" class="section-placement-img placement-img3">
                         <div class="placement-info">
-                            <p class="placement-info-price">от<strong class="price">6 254</strong>/ ночь</p>
+                            <p class="placement-info-price">от <strong class="price">6 254</strong> / ночь</p>
                             <p class="placement-info-name">Lagoona de la guerra</p>
                             <p class="placement-info-place">Барселона, Испания</p>
                             <a href="" class="placement-btn">Номера</a>
+                            <div class="placement-rate">
                         </div>
-                        <div class="placement-rate">
                             alt=звёзды
                         </div>
                     </li>
                     <li class="section-placement-item">
-                        <span class="sectiop-placement-img"></span>
+                        <img src="/img/placement4.png" alt="Отель" class="section-placement-img placement-img4">
                         <div class="placement-info">
-                            <p class="placement-info-price">от<strong class="price">6 320</strong>/ ночь</p>
+                            <p class="placement-info-price">от <strong class="price">6 320</strong> / ночь</p>
                             <p class="placement-info-name">Lagoona mentira piadosa</p>
                             <p class="placement-info-place">Барселона, Испания</p>
                             <a href="" class="placement-btn">Номера</a>
+                            <div class="placement-rate">
                         </div>
-                        <div class="placement-rate">
                             alt=звёзды
                         </div>
                     </li>
                     <li class="section-placement-item">
-                        <span class="sectiop-placement-img"></span>
+                        <img src="/img/placement5.png" alt="Отель" class="section-placement-img placement-img5">
                         <div class="placement-info">
-                            <p class="placement-info-price">от<strong class="price">6 457</strong>/ ночь</p>
+                            <p class="placement-info-price">от <strong class="price">6 457</strong> / ночь</p>
                             <p class="placement-info-name">Lagoona empujar la creatividad</p>
                             <p class="placement-info-place">Барселона, Испания</p>
                             <a href="" class="placement-btn">Номера</a>
+                            <div class="placement-rate">
                         </div>
-                        <div class="placement-rate">
                             alt=звёзды
                         </div>
                     </li>
                     <li class="section-placement-item">
-                        <span class="sectiop-placement-img"></span>
+                        <img src="/img/placement6.png" alt="Отель" class="section-placement-img placement-img6">
                         <div class="placement-info">
-                            <p class="placement-info-price">от<strong class="price">6 320</strong>/ ночь</p>
+                            <p class="placement-info-price">от <strong class="price">6 320</strong> / ночь</p>
                             <p class="placement-info-name">Lagoona el retorno</p>
                             <p class="placement-info-place">Барселона, Испания</p>
                             <a href="" class="placement-btn">Номера</a>
+                            <div class="placement-rate">
                         </div>
-                        <div class="placement-rate">
                             alt=звёзды
                         </div>
                     </li>
                     <li class="section-placement-item">
-                        <span class="sectiop-placement-img"></span>
+                        <img src="/img/placement7.png" alt="Отель" class="section-placement-img placement-img7">
                         <div class="placement-info">
-                            <p class="placement-info-price">от<strong class="price">6 505</strong>/ ночь</p>
+                            <p class="placement-info-price">от <strong class="price">6 505</strong> / ночь</p>
                             <p class="placement-info-name">Lagoona mentira piadosa</p>
                             <p class="placement-info-place">Барселона, Испания</p>
                             <a href="" class="placement-btn">Номера</a>
+                            <div class="placement-rate">
                         </div>
-                        <div class="placement-rate">
                             alt=звёзды
                         </div>
                     </li>
                     <li class="section-placement-item">
-                        <span class="sectiop-placement-img"></span>
+                        <img src="/img/placement8.png" alt="Отель" class="section-placement-img placement-img8">
                         <div class="placement-info">
-                            <p class="placement-info-price">от<strong class="price">6 824</strong>/ ночь</p>
+                            <p class="placement-info-price">от <strong class="price">6 824</strong> / ночь</p>
                             <p class="placement-info-name">Lagoona suerte siguió siempre</p>
                             <p class="placement-info-place">Барселона, Испания</p>
                             <a href="" class="placement-btn">Номера</a>
+                            <div class="placement-rate">
                         </div>
-                        <div class="placement-rate">
                             alt=звёзды
                         </div>
                     </li>
                     <li class="section-placement-item placement-item-more">
-                        <span class="sectiop-placement-last-img"></span>
+                        <span class="section-placement-last-img"></span>
                         <a href="" class="placement-item-more-btn">Посмотреть все варианты</a>
                     </li>
                 </ul>
-
             </div>
         </section>
         <section class="section-contacts">
-            <div class="container">
+            <div class="container section-container">
                 <h1 class="section-heading">Контакты</h1>
-                <ul class="section-contacts-list">
-                    <li class="section-contact-item">
-                        <strong class="section-contacts-heading">Адреса</strong>
-                        <div class="section-contacts-info">
-                            Москва, улица Юности, дом 5, строение 4, офис 2
-                        </div>
-                    </li>
-                    <li class="section-contact-item">
-                        <strong class="section-contacts-heading">Телефоны</strong>
-                        <div class="section-contacts-info">
-                            <a href="tel:+74995356434" class="section-contacts-link">+7 499 535-64-34</a>
-                            <a href="tel:+74950050544" class="section-contacts-link">+7 495 005-05-44</a>
-                        </div>
-                    </li>
-                    <li class="section-contact-item">
-                        <strong class="section-contacts-heading">Email</strong>
-                        <div class="section-contacts-info">
-                            <a href="mailto:lg.oona@mail.ru" class="section-contacts-link">mailto:lg.oona@mail.ru</a>
-                            <a href="mailto:hotels.ln@mail.ru" class="section-contacts-link">hotels.ln@mail.ru</a>
-                        </div>
-                    </li>
-                    <li class="section-contact-item">
-                        <strong class="section-contacts-heading">График</strong>
-                        <div class="section-contacts-info">
-                            Понедельник-пятница, с 10:00 до 19:00
-                        </div>
-                    </li>
-                </ul>
-                <a href="" class="contacts-btn">Построить маршрут</a>
-                <div class="contact-img"></div>
+                <div class="contacts-container">
+                    <div class="contacts-list-info">
+                            <ul class="section-contacts-list">
+                                <li class="section-contact-item">
+                                    <strong class="section-contacts-heading">Адреса</strong>
+                                    <div class="section-contacts-info">
+                                        Москва, улица Юности, дом 5, строение 4, офис 2
+                                    </div>
+                                </li>
+                                <li class="section-contact-item">
+                                    <strong class="section-contacts-heading">Телефоны</strong>
+                                    <div class="section-contacts-info">
+                                        <a href="tel:+74995356434" class="section-contacts-link phone">+7 499 535-64-34</a>
+                                        <a href="tel:+74950050544" class="section-contacts-link phone">+7 495 005-05-44</a>
+                                    </div>
+                                </li>
+                                <li class="section-contact-item">
+                                    <strong class="section-contacts-heading">Email</strong>
+                                    <div class="section-contacts-info">
+                                        <a href="mailto:lg.oona@mail.ru" class="section-contacts-link mail">lg.oona@mail.ru</a>
+                                        <a href="mailto:hotels.ln@mail.ru" class="section-contacts-link mail" >hotels.ln@mail.ru</a>
+                                    </div>
+                                </li>
+                                <li class="section-contact-item">
+                                    <strong class="section-contacts-heading">График</strong>
+                                    <div class="section-contacts-info">
+                                        Понедельник-пятница, с 10:00 до 19:00
+                                    </div>
+                                </li>                            
+                            </ul>
+
+                        <a href="" class="contact-btn">Построить маршрут</a>
+                    </div>
+                    <img src="/img/Contacts.png" alt="картинка" class="contact-img">
+                </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-info">
-                    <p class="footer-info-text">© 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»</p>
-                    <p class="footer-info-text">Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
-                    <a href="" class="footer-info-agreement">Пользовательское соглашение</a>
+    </main>
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="footer-info">
+                <p class="footer-info-text">© 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»</p>
+                <p class="footer-info-text">Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
+                <a href="" class="footer-info-agreement">Пользовательское соглашение</a>
+            </div>
+            <div class="footer-contacts">
+                <p class="footer-adress">11710, улица Юности, дом 5 строение 4, офис 2</p>
+                <div class="footer-phone">
+                    <a href="tel:+74995356434" class="phone">+7 499 535-64-34</a>
+                    <a href="tel:+74950050544" class="phone">+7 495 005-05-44</a>
                 </div>
-                <div class="footer-contacts">
-                    <p class="footer-adress">11710, улица Юности, дом 5 строение 4, офис 2</p>
-                    <div class="footer-phone">
-                        <a href="tel:+74995356434">+7 499 535-64-34</a>
-                        <a href="tel:+74950050544">+7 495 005-05-44</a>
-                    </div>
-                    <div class="footer-mail">
-                        <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
-                        <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
-                    </div>
-                </div>
-                <div class="footer-social-link">
-                    <ul class="footer-social-logo">
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link">
-                                <spanc class="footer-social-icon footer-social-icon-group"></span>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link">
-                                <spanc class="footer-social-icon footer-social-icon-ok"></span>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a href="" class="footer-social-link">
-                                <spanc class="footer-social-icon footer-social-icon-vk"></span>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="footer-mail">
+                    <a href="mailto:lg.oona@mail.ru" class="mail">lg.oona@mail.ru</a>
+                    <a href="mailto:hotels.ln@mail.ru" class="mail">hotels.ln@mail.ru</a>
                 </div>
             </div>
-        </footer>
-    </main>
+            <div class="footer-social-link">
+                <ul class="footer-social-logo">
+                    <li class="footer-social-item">
+                        <a href="" class="footer-social-link">
+                            <spanc class="footer-social-icon footer-social-icon-group"></span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="" class="footer-social-link">
+                            <spanc class="footer-social-icon footer-social-icon-ok"></span>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="" class="footer-social-link">
+                            <spanc class="footer-social-icon footer-social-icon-vk"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
