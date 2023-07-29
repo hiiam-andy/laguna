@@ -1,0 +1,58 @@
+export default [
+  {
+    id: 1,
+    image: require("../../img/placement1.png"),
+    price: "4 698",
+    name: "Lagoona española",
+    place: "Барселона, Испания",
+  },
+  {
+    id: 2,
+    image: require("../../img/placement2.png"),
+    price: "5 148",
+    name: "Lagoona son típicas",
+    place: "Барселона, Испания",
+  },
+  {
+    id: 3,
+    image: require("../../img/placement3.png"),
+    price: "6 254",
+    name: "Lagoona de la guerra",
+    place: "Барселона, Испания",
+  },
+  {
+    id: 4,
+    image: require("../../img/placement4.png"),
+    price: "6 320",
+    name: "Lagoona mentira piadosa",
+    place: "Барселона, Испания",
+  },
+  {
+    id: 5,
+    image: require("../../img/placement5.png"),
+    price: "6 457",
+    name: "Lagoona empujar la creatividad",
+    place: "Барселона, Испания",
+  },
+  {
+    id: 6,
+    image: require("../../img/placement6.png"),
+    price: "6 320",
+    name: "Lagoona el retorno",
+    place: "Барселона, Испания",
+  },
+  {
+    id: 7,
+    image: require("../../img/placement7.png"),
+    price: "6 505",
+    name: "Lagoona mentira piadosa",
+    place: "Барселона, Испания",
+  },
+  {
+    id: 8,
+    image: require("../../img/placement8.png"),
+    price: " 6 824",
+    name: "Lagoona suerte siguió siempre",
+    place: "Барселона, Испания",
+  },
+];
