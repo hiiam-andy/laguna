@@ -83,6 +83,7 @@ align-items: flex-start;
 }
 .footer_social_item{
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .footer_social_logo{
   margin-left: 211px;
