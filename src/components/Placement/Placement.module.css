@@ -1,0 +1,131 @@
+
+.placement_container{
+  max-width: 1170px;
+  padding:0;
+  margin-bottom: 374px;
+}
+.placement_heading{
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-left: 40px;   
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.placement_list{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+.placement_item_more{
+  display:flex;
+  align-items: flex-end;
+  min-width: 374px;
+  min-height: 440px;
+  background: url(../../img/placement-more.png) center center no-repeat;
+  background-size: cover;
+}
+.placement_item_more_btn{
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 500;
+  align-items: flex-end;
+  color:#FFFFFF;
+  background: transparent;
+  border: none;
+}
+
+/* CARD */
+
+.placement_card_item{
+  min-width: 374px;
+  min-height: 440px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.placement_card_img{
+  background-position: center;
+  height: 50%;
+  background-size: cover;
+}
+.placement_card_description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 31px 45px 45px;
+  height: 50%;
+}
+.placement_card_price_rate{
+  display: flex;
+  margin-bottom: 14px;
+  justify-content: space-between;
+}
+.placement_card_info{
+  margin:0;
+}
+.price{
+  margin-right: 11px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.placement_card_info_name{
+  margin-top: 0;
+  margin-bottom:  13px;;
+}
+.placement_card_place{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.placement_card_btn{
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color:#CC9933;
+  padding: 12px 20px;
+  border: 1px solid #CC9933;
+  border-radius: 15px;
+  background: transparent;
+}
+.placement_card_btn:hover{
+color: #FFFFFF;
+background-color: #CC9933;
+}
+
+
+
+
+
+
+@media (max-width:1160px) {
+  .placement_card_item{
+      width:48%;
+  }
+}
+
+
+
+@media (max-width:780px) {
+  .placement_card_item{
+    min-height: 225px;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.placement_card_img{
+    height:100%;
+    width: 50%;
+}
+.placement_card_description{
+    padding:25px 30px;
+    width:50%;
+    height: 100%;
+}
+
+}

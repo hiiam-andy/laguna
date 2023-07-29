@@ -1,0 +1,35 @@
+.advantage_heading{
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-left: 40px;
+}
+.advantage_list{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+.advantage_card{
+  display:flex;
+  flex-direction: column;
+  width: 276px;
+  height: 276px;
+  padding: 40px 37px 32px 45px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+} 
+.advantage_card_icon{
+  width: 64px;
+  height: 66px;
+}
+.advantage_card_text{
+  margin-top: 9px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
