@@ -1,32 +1,28 @@
 import React from "react";
 import style from "./Offer.module.css";
+import data from "./offerData";
+import OfferCard from "./OfferCard";
 
 export default function Offer() {
+  let offerCards = data.map((el, index) => {
+    const greedClass = `offer${index + 1}`;
+    return (
+      <OfferCard
+        key={el.id}
+        title={el.title}
+        image={el.image}
+        price={el.price}
+        greedClass={greedClass}
+      />
+    );
+  });
+
   return (
     <section className="section-offer">
       <div className={["container", style.offer_container].join(" ")}>
         <h1 className={style.offer_heading}>Спецпредложения</h1>
-        <div className={style.offer_div}>
-          <ul className={style.offer_list}>
-            <li className={[style.offer_small, style.offer1].join(" ")}>
-              <h2 className={style.offer_header}>Мальдивские острова</h2>
-              <h3 className={style.offer_price}>от 55 000</h3>
-              <a className={style.offer_link}>Подробнее</a>
-            </li>
-            <li className={[style.offer_small, style.offer2].join(" ")}>
-              <h2 className={style.offer_card_header}>
-                Горящий <br /> тур на остров Крит
-              </h2>
-              <h3 className={style.offer_price}>от 30 000</h3>
-              <a className={style.offer_link}>Подробнее</a>
-            </li>
-          </ul>
-          <div className={style.offer_big}>
-            <h2 className={style.offer_header_big}>Номера категории люкс</h2>
-            <h3 className={style.offer_price_big}>от 5 000</h3>
-            <a className={style.offer_link}>Подробнее</a>
-          </div>
-        </div>
+
+        <ul className={style.offer_list}>{offerCards}</ul>
       </div>
     </section>
   );

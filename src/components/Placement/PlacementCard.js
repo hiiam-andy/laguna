@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Placement.module.css";
+import MyButton from "../UI/MyButton";
 
 export default function PlacementCard({ image, name, place, price }) {
   return (
@@ -15,8 +16,8 @@ export default function PlacementCard({ image, name, place, price }) {
         </div>
         <div className={style.placement_card_place}>
           <p className={style.placement_card_info_name}>{name}</p>
-          <p className={style.placement_info_place}>{place}</p>
-          <button className={style.placement_card_btn}>Номера</button>
+          <p className={style.placement_card_info_place}>{place}</p>
+          <MyButton>Номера</MyButton>
         </div>
       </div>
     </li>

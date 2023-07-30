@@ -13,18 +13,19 @@
   margin-bottom: 20px;
 }
 .placement_list{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap:  24px;
 }
 .placement_item_more{
   display:flex;
   align-items: flex-end;
+  border-radius: 15px;
   min-width: 374px;
   min-height: 440px;
   background: url(../../img/placement-more.png) center center no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 .placement_item_more_btn{
   font-size: 20px;
@@ -40,22 +41,23 @@
 
 .placement_card_item{
   min-width: 374px;
-  min-height: 440px;
+  height: 440px;
   background-color: #FFFFFF;
   border-radius: 15px;
   overflow: hidden;
 }
 .placement_card_img{
+  width: 100%;
+  height: 49%;
   background-position: center;
-  height: 50%;
   background-size: cover;
 }
 .placement_card_description{
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 31px 45px 45px;
-  height: 50%;
+  padding: 29px 47px 45px 45px;
 }
 .placement_card_price_rate{
   display: flex;
@@ -81,38 +83,14 @@
   align-items: flex-start;
 }
 
-.placement_card_btn{
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  color:#CC9933;
-  padding: 12px 20px;
-  border: 1px solid #CC9933;
-  border-radius: 15px;
-  background: transparent;
-}
-.placement_card_btn:hover{
-color: #FFFFFF;
-background-color: #CC9933;
-}
-
-
-
-
-
 
 @media (max-width:1160px) {
-  .placement_card_item{
-      width:48%;
-  }
 }
-
 
 
 @media (max-width:780px) {
   .placement_card_item{
-    min-height: 225px;
+    height: 225px;
     display:flex;
     flex-direction: row;
     width: 100%;

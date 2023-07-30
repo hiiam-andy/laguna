@@ -5,15 +5,15 @@
   margin-left: 40px;
 }
 .advantage_list{
-  display:flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  justify-items: center;
   gap: 22px;
 }
 .advantage_card{
   display:flex;
   flex-direction: column;
-  width: 276px;
+  min-width: 276px;
   height: 276px;
   padding: 40px 37px 32px 45px;
   background-color: #FFFFFF;

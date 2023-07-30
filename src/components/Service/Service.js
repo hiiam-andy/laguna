@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Service.module.css";
 import ServiceCard from "./ServiceCard";
 
-import { data } from "./serviceData";
+import data from "./serviceData";
 
 export default function Service() {
   return (

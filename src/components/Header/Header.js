@@ -5,6 +5,8 @@ import { ACCOUNT_ROUTE, MAIN_ROUTE } from "../../pages/PAGES";
 import LOGO from "../../img/logo.svg";
 
 import style from "./Header.module.css";
+import Navigation from "./Navigation";
+import MyButton from "../UI/MyButton";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -33,34 +35,14 @@ export default function Header() {
             Личный кабинет
           </a>
         </div>
-        <div className={style.header_bottom}>
-          <nav className={style.header_nav}>
-            <ul className={style.header_nav_list}>
-              <li className={style.header_nav_item}>
-                <a className={style.header_nav_link}>О нас</a>
-              </li>
-              <li className={style.header_nav_item}>
-                <a className={style.header_nav_link}>Услуги</a>
-              </li>
-              <li className={style.header_nav_item}>
-                <a className={style.header_nav_link}>Преимущества</a>
-              </li>
-              <li className={style.header_nav_item}>
-                <a className={style.header_nav_link}>Размещение</a>
-              </li>
-              <li className={style.header_nav_item}>
-                <a className={style.header_nav_link}>Блог</a>
-              </li>
-              <li className={style.header_nav_item}>
-                <a className={style.header_nav_link}>Контакты</a>
-              </li>
-            </ul>
-          </nav>
+
+        <nav className={style.header_nav}>
+          <Navigation />
           <div className={style.btn}>
-            <button className={style.header_btn}>Хочу тур</button>
-            <button className={style.header_btn}>Обратный звонок</button>
+            <MyButton>Хочу тур</MyButton>
+            <MyButton style={{ marginLeft: "40px" }}>Обратный звонок</MyButton>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
   );

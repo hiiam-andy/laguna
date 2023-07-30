@@ -1,0 +1,14 @@
+.myButton{
+  font-size: 16px;
+  font-weight: 400;
+  padding: 11px 19px;
+  color:#CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  background: transparent;
+  transition: background-color .2s;
+}
+.myButton:hover{
+  color:#FFFFFF;
+  background-color: #CC9933;
+}

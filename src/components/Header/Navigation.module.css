@@ -1,0 +1,24 @@
+/* desktop */
+
+.header_nav_list{
+  display: flex;
+}
+.header_nav_link{
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+}
+.header_nav_link:hover{
+  color:#CC9933
+}
+.header_nav_item:not(:last-child){
+  margin-right: 45.5px;
+}
+
+@media(max-width: 1000px) {
+  .header_nav_list{
+    display: none;
+  }
+}
+/* side  */
+

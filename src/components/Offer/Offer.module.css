@@ -1,105 +1,16 @@
-.offer_container{
-  padding:0;
-}
 .offer_heading{
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
   margin-left: 40px;   
-  margin-top: 0;
   margin-bottom: 20px;
 }
-.offer_div{
-  display: flex;
-  justify-content: space-between;
-}
 .offer_list{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 49%;
-}
-.offer_small{
-  display:inline-block;
-  padding: 40px 108px 40px 45px;
-  color:#FFFFFF;
-  border-radius: 15px;
-  height: 48%;
-}
-.offer1{
-  background: url(../../img/offer1.png) center center no-repeat;
-  background-size: cover;
-}
-.offer2{
-  background: url(../../img/offer2.png) center center no-repeat;
-  background-size: cover;
-}
-.offer_small:not(:first-child){
-  margin-bottom: 0;
-}
-.offer_card_header{
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-.offer_price{
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 45px;
-
-}
-.offer_big{
-  display:inline-block;
-  margin: 0;
-  border-radius: 15px;
-  padding: 212px 229px 40px 45px;
-  width: 49%;
-  color:#FFFFFF;
-  background: url(../../img/offerbig.png) center center no-repeat;
-  background-size: cover;
-}
-.offer_header_big{
-  display: flex;
-  margin:0;
-  margin-bottom: 15px;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 700;
-}
-.offer_price_big{
-  margin-top:0;
-  margin-bottom: 45px;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-}
-.offer_link{
-  background-image: url(../../img/arrow.svg);
-  background-position: right center;
-  background-repeat: no-repeat;
-  font-size: 16px;
-  padding-right: 15px;
-  line-height: 16px;
-  font-weight: 400;
-  color:#F0BF5F;
-  transition: 0.5s;
-}
-.offer_link:hover{
-  padding-right: 25px;
-}
-
-@media (max-width:780px) {
-  .offer_div{
-      flex-direction: column;
-  }
-  .offer_list{
-      width: 100%;
-  }
-  .offer_big{
-      width:100%;
-  }
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr 1fr;
+grid-template-areas: 
+  "A A C C"
+  "B B C C";
+  gap: 24px;
 }
