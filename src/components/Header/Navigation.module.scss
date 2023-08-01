@@ -1,11 +1,11 @@
+@import '../../style/variables.scss';
 /* desktop */
 
 .header_nav_list{
   display: flex;
 }
 .header_nav_link{
-  font-size: 16px;
-  font-weight: 400;
+  @include myfont(400,16,16);
   color: #666;
 }
 .header_nav_link:hover{

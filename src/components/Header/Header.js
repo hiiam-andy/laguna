@@ -4,7 +4,7 @@ import { ACCOUNT_ROUTE, MAIN_ROUTE } from "../../pages/PAGES";
 
 import LOGO from "../../img/logo.svg";
 
-import style from "./Header.module.css";
+import style from "./Header.module.scss";
 import Navigation from "./Navigation";
 import MyButton from "../UI/MyButton";
 

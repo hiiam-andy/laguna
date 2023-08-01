@@ -1,13 +1,15 @@
 import React from "react";
-import style from "./Placement.module.css";
 import data from "./placementData";
 import PlacementCard from "./PlacementCard";
+import style from "./Placement.module.scss";
 
 export default function Placement() {
   return (
     <section className="section-placement">
       <div className="container placement_container">
-        <h1 className={style.placement_heading}>Размещение</h1>
+        <h1 className={["section-heading", style.placement_heading].join(" ")}>
+          Размещение
+        </h1>
         <ul className={style.placement_list}>
           {data.map((card) => (
             <PlacementCard

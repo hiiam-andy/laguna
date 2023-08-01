@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Advantage.module.css";
+import style from "./Advantage.module.scss";
 
 export default function AdvantageCard({ image, text }) {
   return (

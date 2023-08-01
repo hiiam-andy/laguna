@@ -1,11 +1,13 @@
 import React from "react";
-import style from "./About.module.css";
+import style from "./About.module.scss";
 
 export default function About() {
   return (
     <section className="section-about">
       <div className={["container", style.about_container].join(" ")}>
-        <h1 className={style.about_heading}>О нас</h1>
+        <h1 className={["section-heading", style.about_heading].join(" ")}>
+          О нас
+        </h1>
         <p className={style.about_text}>
           Идейные соображения высшего порядка, а также сложившаяся структура
           организации влечёт за собой процесс внедрения и модернизации системы

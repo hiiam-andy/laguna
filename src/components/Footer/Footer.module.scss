@@ -1,4 +1,4 @@
-
+@import '../../style/variables.scss';
 .footer_container{
   min-height: 341px;
   display: flex;
@@ -8,31 +8,24 @@
   border-radius: 15px;
 }
 .footer_info{
-  max-width: 302px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  max-width: 31%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .footer_info_text {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 400;
+  @include myfont(400,16,30);
   color:#FFFFFF;
   margin: 0;
 }
 
-.footer_info_agreement{
-  margin-top: 4px;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color:#CC9933;
-}
 .footer_right{
+  width: 61%;
   position: relative;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer_contacts{
@@ -43,11 +36,9 @@ align-items: flex-start;
 }
 
 .footer_adress{
+  @include myfont(400,16,30);
   margin: 0;
   margin-bottom: 15px;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 400;
   color:#FFFFFF;
 }
 .footer_links{
@@ -56,39 +47,28 @@ align-items: flex-start;
   max-width: 143px;
 }
 
+
+
 .footer_link{
-  margin-bottom: 15px;
-}
-.phone:hover{
-  color: #F0BF5F;
-}
-.phone{
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  @include myfont(400,16,24);
   color:#CC9933;
+
+  &:hover{
+    color: #F0BF5F;
+  }
 }
-.mail{
-  color:#CC9933;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-}
-.mail:hover{
-  color: #F0BF5F;
-}
+
+
 .footer_social_link{
   display: flex;
   flex-direction: row-reverse;
+  cursor: pointer;
 }
 .footer_social_item{
   margin-bottom: 20px;
   cursor: pointer;
 }
-.footer_social_logo{
-  margin-left: 211px;
 
-}
 .footer_social_icon{
   width: 25px;
   height: 25px;
@@ -97,17 +77,21 @@ align-items: flex-start;
   background-repeat: no-repeat;
   background-color: transparent;
   fill: #999999;
+  cursor: pointer;
+
+  &:hover path{
+    fill: #CC9933;
+    cursor: pointer;
+  }
 }
-.footer_social_icon:hover path{
-  fill: #CC9933;
-}
+
 .footer_img{
   z-index: 1;
   width: 254px;
   height: 228px;
   background-image: url(../../img/footer.png);
   position: absolute;
-  left: -90px;
-  top: 68px;
+  left: 39%;
+  top: 27%;
 }
 

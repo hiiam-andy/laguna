@@ -7,8 +7,9 @@
   border-radius: 10px;
   background: transparent;
   transition: background-color .2s;
-}
-.myButton:hover{
-  color:#FFFFFF;
+
+  &:hover{
+    color:#FFFFFF;
   background-color: #CC9933;
+  }
 }

@@ -1,13 +1,7 @@
+@import '../../style/variables.scss';
+
 .service_container{
   margin-bottom: 47px;
-}
-.section_heading{
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 400;
-  margin-left: 40px;   
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .service_list{
@@ -34,13 +28,11 @@
 }
 
 .service_link{
+  @include myfont(500,20,40);
   background-image: url(../../img/arrow.svg);
   background-position: right center;
   background-repeat: no-repeat;
   padding-right: 19px;
-  font-size: 20px;
-  line-height: 40px;
-  font-weight: 500;
   color: #CC9933;
   transition: 0.2s;
 }
@@ -52,10 +44,7 @@
 }
 .service_text{
   margin:0;
-  font-size: 16px;
-  line-height: 32px;
-  font-weight: 400;
-
+  @include myfont(400, 16, 32);
 }
 
 @media (max-width:575px){

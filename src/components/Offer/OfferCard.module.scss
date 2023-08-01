@@ -1,3 +1,4 @@
+@import '../../style/variables.scss';
 
 .offer1{
   grid-area: A;
@@ -41,39 +42,29 @@
   align-items: flex-start;
 }
 .offer_card_header{
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 700;
+  @include myfont(700, 40, 40);
   margin-bottom: 14px;
 }
 .offer3 .offer_card_header {
+  @include myfont(700, 60, 60);
   display: flex;
   margin:0;
   margin-bottom: 15px;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 700;
 }
 .offer_price{
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 400;
+  @include myfont(400, 20, 20);
   margin-bottom: 45px;
 }
 .offer3 .offer_price{
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
+  @include myfont(400, 30, 30);
 }
 
 
 .offer_link{
+  @include myfont(400, 16, 16);
   align-self: flex-start;
   background: url(../../img/arrow.svg) right center no-repeat;
-  font-size: 16px;
   padding-right: 15px;
-  line-height: 16px;
-  font-weight: 400;
   color:#F0BF5F;
   transition: 0.5s;
 }

@@ -1,16 +1,9 @@
+@import '../../style/variables.scss';
 
 .placement_container{
   max-width: 1170px;
   padding:0;
   margin-bottom: 374px;
-}
-.placement_heading{
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 400;
-  margin-left: 40px;   
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 .placement_list{
   display: grid;
@@ -28,9 +21,7 @@
   overflow: hidden;
 }
 .placement_item_more_btn{
-  font-size: 20px;
-  line-height: 40px;
-  font-weight: 500;
+  @include myfont(400, 20, 40);
   align-items: flex-end;
   color:#FFFFFF;
   background: transparent;
@@ -68,10 +59,8 @@
   margin:0;
 }
 .price{
+  @include myfont(400, 20, 20);
   margin-right: 11px;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 700;
 }
 .placement_card_info_name{
   margin-top: 0;

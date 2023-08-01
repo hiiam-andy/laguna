@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Placement.module.css";
 import MyButton from "../UI/MyButton";
+import style from "./Placement.module.scss";
 
 export default function PlacementCard({ image, name, place, price }) {
   return (

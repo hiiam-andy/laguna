@@ -1,0 +1,12 @@
+@mixin font-heading{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+@mixin myfont($fw, $fs, $lh){
+  font-weight: $fw;
+  font-size: ($fs)+px;
+  line-height: ($lh)+px;
+}

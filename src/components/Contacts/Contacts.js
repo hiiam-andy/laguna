@@ -1,11 +1,13 @@
 import React from "react";
-import style from "./Contacts.module.css";
+import style from "./Contacts.module.scss";
 
 export default function Contacts() {
   return (
     <section className="section-contacts">
       <div className={["container", style.section_container].join(" ")}>
-        <h1 className={style.contacts_header}>Контакты</h1>
+        <h1 className={["section-heading", style.contacts_heading].join(" ")}>
+          Контакты
+        </h1>
         <div className={style.contacts_container}>
           <div className={style.contacts_list_info}>
             <ul className={style.contacts_list}>

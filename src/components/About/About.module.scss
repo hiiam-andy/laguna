@@ -1,0 +1,5 @@
+@import '../../style/variables.scss';
+.about_text {
+  @include myfont(400,16,32);
+  width: 76%;
+}

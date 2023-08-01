@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Service.module.css";
+import style from "./Service.module.scss";
 
 export default function ServiceCard({ title, body, image, alt }) {
   return (

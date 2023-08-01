@@ -1,9 +1,5 @@
-.advantage_heading{
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 400;
-  margin-left: 40px;
-}
+@import '../../style/variables.scss';
+
 .advantage_list{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -18,9 +14,7 @@
   padding: 40px 37px 32px 45px;
   background-color: #FFFFFF;
   border-radius: 15px;
-  font-size: 16px;
-  line-height: 32px;
-  font-weight: 400;
+  @include myfont(400,16,24);
 } 
 .advantage_card_icon{
   width: 64px;
@@ -29,7 +23,5 @@
 .advantage_card_text{
   margin-top: 9px;
   margin-bottom: 0;
-  font-size: 16px;
-  line-height: 32px;
-  font-weight: 400;
+  @include myfont(400,16,24);
 }

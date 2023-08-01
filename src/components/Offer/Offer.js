@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Offer.module.css";
+import style from "./Offer.module.scss";
 import data from "./offerData";
 import OfferCard from "./OfferCard";
 
@@ -20,7 +20,9 @@ export default function Offer() {
   return (
     <section className="section-offer">
       <div className={["container", style.offer_container].join(" ")}>
-        <h1 className={style.offer_heading}>Спецпредложения</h1>
+        <h1 className={["section-heading", style.offer_heading].join(" ")}>
+          Спецпредложения
+        </h1>
 
         <ul className={style.offer_list}>{offerCards}</ul>
       </div>
